@@ -358,18 +358,30 @@ strong {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background:
-        radial-gradient(ellipse 80% 50% at 20% 60%, rgba(102, 126, 234, 0.12) 0%, transparent 60%),
-        radial-gradient(ellipse 60% 40% at 80% 40%, rgba(129, 140, 248, 0.08) 0%, transparent 60%),
-        radial-gradient(ellipse 100% 60% at 50% 0%, rgba(102, 126, 234, 0.06) 0%, transparent 70%);
     pointer-events: none;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
 }
 
 .hero-bg::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom, transparent 60%, var(--bg-primary) 100%);
+    z-index: 1;
+    background:
+        linear-gradient(to bottom, rgba(3, 7, 18, 0.5) 0%, rgba(3, 7, 18, 0.5) 60%, var(--bg-primary) 100%),
+        radial-gradient(ellipse 80% 50% at 20% 60%, rgba(102, 126, 234, 0.1) 0%, transparent 60%);
 }
 
 .hero-content {
@@ -658,12 +670,8 @@ strong {
 /* ========================================
    SECTION 7: PRICING
    ======================================== */
-#pricing {
-    background-color: var(--bg-primary);
-}
-
 #pricing .section-heading {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .pricing-wrapper {
@@ -1076,5 +1084,244 @@ strong {
 @media (min-width: 1024px) {
     .section {
         padding: 8rem 0;
+    }
+}
+
+/* ========================================
+   BROWSER MOCKUP FRAMES
+   ======================================== */
+.browser-mockup {
+    background: #0d1117;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.browser-mockup-large {
+    max-width: 100%;
+}
+
+.browser-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 14px;
+    background: rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.browser-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.browser-dot:first-child {
+    background: rgba(255, 99, 71, 0.6);
+}
+
+.browser-dot:nth-child(2) {
+    background: rgba(255, 193, 7, 0.6);
+}
+
+.browser-dot:nth-child(3) {
+    background: rgba(76, 175, 80, 0.6);
+}
+
+.browser-mockup img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Step screenshots in browser mockups */
+.step-screenshot .browser-mockup {
+    border-radius: 10px;
+}
+
+.step-screenshot .browser-toolbar {
+    padding: 8px 12px;
+}
+
+.step-screenshot .browser-dot {
+    width: 8px;
+    height: 8px;
+}
+
+/* ========================================
+   PHONE MOCKUP FRAME
+   ======================================== */
+.phone-mockup {
+    background: #0d1117;
+    border-radius: 32px;
+    padding: 10px;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.08);
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.phone-notch {
+    width: 80px;
+    height: 6px;
+    background: #0d1117;
+    border-radius: 3px;
+    margin: 0 auto 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.phone-mockup img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 22px;
+}
+
+/* ========================================
+   PRICING ANCHOR & URGENCY
+   ======================================== */
+.pricing-anchor {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+    font-weight: 500;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.6;
+}
+
+.pricing-urgency {
+    margin-top: 1.25rem;
+    color: var(--accent-light);
+    font-size: 0.875rem;
+    font-weight: 500;
+    opacity: 0.85;
+}
+
+.cta-urgency {
+    margin-top: 0.75rem;
+    color: var(--accent-light);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    opacity: 0.85;
+}
+
+/* ========================================
+   TESTIMONIALS
+   ======================================== */
+.testimonials-grid {
+    margin-top: 3.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.testimonial-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    position: relative;
+}
+
+.testimonial-quote-mark {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--accent);
+    opacity: 0.25;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-text {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.7;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-attribution {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.testimonial-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-light);
+    flex-shrink: 0;
+}
+
+.testimonial-name {
+    font-weight: 600;
+    font-size: 0.9375rem;
+    color: var(--text-primary);
+}
+
+.testimonial-role {
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+}
+
+.testimonial-card.fade-in:nth-child(2) { transition-delay: 0.1s; }
+.testimonial-card.fade-in:nth-child(3) { transition-delay: 0.2s; }
+
+@media (min-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ========================================
+   FOUNDER SECTION
+   ======================================== */
+.founder-section {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    max-width: 720px;
+    margin: 3rem auto 0;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+}
+
+.founder-photo {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-border);
+    flex-shrink: 0;
+}
+
+.founder-attribution {
+    color: var(--text-secondary);
+    font-size: 1.0625rem;
+    font-weight: 600;
+}
+
+/* ========================================
+   SCREENSHOT SECTION — RESPONSIVE PHONE
+   ======================================== */
+@media (min-width: 640px) {
+    .screenshot-row {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+}
+
+@media (max-width: 639px) {
+    .phone-mockup {
+        max-width: 240px;
     }
 }

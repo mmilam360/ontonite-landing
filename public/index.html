@@ -51,7 +51,11 @@
 
     <!-- ========== SECTION 1: HERO ========== -->
     <section class="hero" id="hero">
-        <div class="hero-bg"></div>
+        <div class="hero-bg">
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="hero-bg.mp4" type="video/mp4">
+            </video>
+        </div>
         <div class="container">
             <div class="hero-content fade-in">
                 <h1>Stop Promoting Shows<br>the Hard Way</h1>
@@ -107,10 +111,14 @@
                         <h3>Add Your Event</h3>
                         <p>Type the band name. We pull in their photo, genre, bio, Spotify, Instagram, and YouTube automatically. Add the date and time. That's it.</p>
                     </div>
-                    <!-- SCREENSHOT: Event creation form with artist auto-fill -->
                     <div class="step-screenshot">
-                        <div class="screenshot-placeholder">
-                            <span>Event Creation Screen</span>
+                        <div class="browser-mockup">
+                            <div class="browser-toolbar">
+                                <span class="browser-dot"></span>
+                                <span class="browser-dot"></span>
+                                <span class="browser-dot"></span>
+                            </div>
+                            <img src="screenshots/dashboard.png" alt="OnTonite Dashboard — Add Your Event">
                         </div>
                     </div>
                 </div>
@@ -120,10 +128,14 @@
                         <h3>Generate Everything</h3>
                         <p>Professional posters ready to download and print. Your website updates instantly. Email blast ready to send. QR code ready to display.</p>
                     </div>
-                    <!-- SCREENSHOT: Generated poster, widget preview, email preview -->
                     <div class="step-screenshot">
-                        <div class="screenshot-placeholder">
-                            <span>Generated Assets Preview</span>
+                        <div class="browser-mockup">
+                            <div class="browser-toolbar">
+                                <span class="browser-dot"></span>
+                                <span class="browser-dot"></span>
+                                <span class="browser-dot"></span>
+                            </div>
+                            <img src="screenshots/poster.png" alt="OnTonite — Generated Concert Poster">
                         </div>
                     </div>
                 </div>
@@ -133,10 +145,14 @@
                         <h3>Fill More Seats</h3>
                         <p>Automated weekly emails keep your fans in the loop. Your website widget collects new subscribers. Event pages with Spotify previews get people excited before they even walk in.</p>
                     </div>
-                    <!-- SCREENSHOT: Email digest, website widget with subscriber form -->
                     <div class="step-screenshot">
-                        <div class="screenshot-placeholder">
-                            <span>Subscriber & Engagement View</span>
+                        <div class="browser-mockup">
+                            <div class="browser-toolbar">
+                                <span class="browser-dot"></span>
+                                <span class="browser-dot"></span>
+                                <span class="browser-dot"></span>
+                            </div>
+                            <img src="screenshots/widget.png" alt="OnTonite — Website Widget">
                         </div>
                     </div>
                 </div>
@@ -230,7 +246,7 @@
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
                     </div>
                     <h3 class="feature-title">Subscriber Growth</h3>
-                    <p class="feature-desc">Collect email subscribers from your website and event pages automatically. Build your fan list without lifting a finger.</p>
+                    <p class="feature-desc">Every show builds your list. Fans subscribe from your website, event pages, and email footers. Your audience grows on autopilot.</p>
                 </div>
             </div>
         </div>
@@ -241,38 +257,88 @@
         <div class="container">
             <h2 class="section-heading fade-in">See It in Action</h2>
             <div class="screenshot-grid">
-                <!-- SCREENSHOT: Dashboard overview showing upcoming events -->
-                <div class="screenshot-placeholder screenshot-large fade-in">
-                    <span>Dashboard — Upcoming Events Overview</span>
+                <div class="browser-mockup browser-mockup-large fade-in">
+                    <div class="browser-toolbar">
+                        <span class="browser-dot"></span>
+                        <span class="browser-dot"></span>
+                        <span class="browser-dot"></span>
+                    </div>
+                    <img src="screenshots/dashboard.png" alt="OnTonite Dashboard — Upcoming Events Overview">
                 </div>
                 <div class="screenshot-row">
-                    <!-- SCREENSHOT: Generated concert poster example -->
-                    <div class="screenshot-placeholder fade-in">
-                        <span>Generated Concert Poster</span>
+                    <div class="browser-mockup fade-in">
+                        <div class="browser-toolbar">
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                        </div>
+                        <img src="screenshots/poster.png" alt="Generated Concert Poster">
                     </div>
-                    <!-- SCREENSHOT: Website widget embedded on a demo bar site -->
-                    <div class="screenshot-placeholder fade-in">
-                        <span>Website Widget on Demo Bar Site</span>
+                    <div class="browser-mockup fade-in">
+                        <div class="browser-toolbar">
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                        </div>
+                        <img src="screenshots/widget.png" alt="Website Widget on Demo Bar Site">
                     </div>
                 </div>
                 <div class="screenshot-row">
-                    <!-- SCREENSHOT: QR code event page on a phone mockup -->
-                    <div class="screenshot-placeholder fade-in">
-                        <span>QR Event Page — Mobile View</span>
+                    <div class="phone-mockup fade-in">
+                        <div class="phone-notch"></div>
+                        <img src="screenshots/event-page.PNG" alt="QR Event Page — Mobile View">
                     </div>
-                    <!-- SCREENSHOT: Email blast preview -->
-                    <div class="screenshot-placeholder fade-in">
-                        <span>Email Blast Preview</span>
+                    <div class="browser-mockup fade-in">
+                        <div class="browser-toolbar">
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                        </div>
+                        <img src="screenshots/email.png" alt="Email Blast Preview">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== SECTION 7: PRICING ========== -->
-    <section class="section" id="pricing">
+    <!-- ========== SECTION 7: COMPARISON (moved before pricing) ========== -->
+    <section class="section" id="comparison">
+        <div class="container">
+            <h2 class="section-heading fade-in">Replace the Whole Stack</h2>
+            <div class="comparison-stack fade-in">
+                <div class="comparison-item old">
+                    <span class="comparison-name">Canva Pro for flyers</span>
+                    <span class="comparison-price">$13/mo</span>
+                </div>
+                <div class="comparison-item old">
+                    <span class="comparison-name">Mailchimp for emails</span>
+                    <span class="comparison-price">$20/mo</span>
+                </div>
+                <div class="comparison-item old">
+                    <span class="comparison-name">Hootsuite for social</span>
+                    <span class="comparison-price">$99/mo</span>
+                </div>
+                <div class="comparison-item old priceless">
+                    <span class="comparison-name">Expo markers and hope</span>
+                    <span class="comparison-price">$priceless</span>
+                </div>
+                <div class="comparison-divider">
+                    <span>vs</span>
+                </div>
+                <div class="comparison-item highlight">
+                    <span class="comparison-name">OnTonite</span>
+                    <span class="comparison-price">$39.99/mo</span>
+                    <span class="comparison-note">— everything included</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION 8: PRICING ========== -->
+    <section class="section section-alt" id="pricing">
         <div class="container">
             <h2 class="section-heading fade-in">Simple Pricing. No Surprises.</h2>
+            <p class="pricing-anchor fade-in">The tools you're already duct-taping together cost $130+/month. OnTonite does it all for $39.99.</p>
             <div class="pricing-wrapper fade-in">
                 <div class="pricing-card">
                     <div class="pricing-price">
@@ -316,47 +382,57 @@
                     </ul>
                     <a href="https://manage.ontonite.app" class="btn btn-primary btn-lg btn-full">Start Your 30-Day Free Trial</a>
                     <p class="pricing-note">No credit card required. Cancel anytime.</p>
+                    <p class="pricing-urgency">We're onboarding Columbus venues first — get in early.</p>
                 </div>
             </div>
-            <p class="pricing-kicker fade-in">Less than what you spend on a single keg. Way more return.</p>
+            <p class="pricing-kicker fade-in">That's $1.33 a day to fill more seats, sell more drinks, and stop wasting time on promotion.</p>
         </div>
     </section>
 
-    <!-- ========== SECTION 8: COMPARISON ========== -->
-    <section class="section section-alt" id="comparison">
+    <!-- ========== SECTION 9: TESTIMONIALS ========== -->
+    <section class="section" id="testimonials">
         <div class="container">
-            <h2 class="section-heading fade-in">Replace the Whole Stack</h2>
-            <div class="comparison-stack fade-in">
-                <div class="comparison-item old">
-                    <span class="comparison-name">Canva Pro for flyers</span>
-                    <span class="comparison-price">$13/mo</span>
+            <h2 class="section-heading fade-in">What Venues Are Saying</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-quote-mark">&ldquo;</div>
+                    <p class="testimonial-text">Coming soon — we're onboarding our first Columbus venues now.</p>
+                    <div class="testimonial-attribution">
+                        <div class="testimonial-avatar"></div>
+                        <div>
+                            <div class="testimonial-name">Columbus Venue</div>
+                            <div class="testimonial-role">Bar &amp; Live Music</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="comparison-item old">
-                    <span class="comparison-name">Mailchimp for emails</span>
-                    <span class="comparison-price">$20/mo</span>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-quote-mark">&ldquo;</div>
+                    <p class="testimonial-text">Coming soon — we're onboarding our first Columbus venues now.</p>
+                    <div class="testimonial-attribution">
+                        <div class="testimonial-avatar"></div>
+                        <div>
+                            <div class="testimonial-name">Columbus Venue</div>
+                            <div class="testimonial-role">Restaurant &amp; Events</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="comparison-item old">
-                    <span class="comparison-name">Hootsuite for social</span>
-                    <span class="comparison-price">$99/mo</span>
-                </div>
-                <div class="comparison-item old priceless">
-                    <span class="comparison-name">Expo markers and hope</span>
-                    <span class="comparison-price">$priceless</span>
-                </div>
-                <div class="comparison-divider">
-                    <span>vs</span>
-                </div>
-                <div class="comparison-item highlight">
-                    <span class="comparison-name">OnTonite</span>
-                    <span class="comparison-price">$39.99/mo</span>
-                    <span class="comparison-note">— everything included</span>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-quote-mark">&ldquo;</div>
+                    <p class="testimonial-text">Coming soon — we're onboarding our first Columbus venues now.</p>
+                    <div class="testimonial-attribution">
+                        <div class="testimonial-avatar"></div>
+                        <div>
+                            <div class="testimonial-name">Columbus Venue</div>
+                            <div class="testimonial-role">Brewery &amp; Taproom</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== SECTION 9: TRUST ========== -->
-    <section class="section" id="trust">
+    <!-- ========== SECTION 10: TRUST ========== -->
+    <section class="section section-alt" id="trust">
         <div class="container">
             <h2 class="section-heading fade-in">Built for Venues, by Someone Who Gets It</h2>
             <div class="trust-content">
@@ -370,12 +446,15 @@
                     <p>This isn't a tool built by a tech company guessing what bars need. It's built by someone who's sat in your bar, watched you scribble on the window with an expo marker, and thought — <em>there has to be a better way.</em></p>
                 </div>
             </div>
-            <!-- TESTIMONIAL PLACEHOLDER: Add real quotes from beta venues here -->
+            <div class="founder-section fade-in">
+                <img src="screenshots/headshot.jpeg" alt="Michael Milam, Founder of OnTonite" class="founder-photo">
+                <p class="founder-attribution">— Michael Milam, Founder</p>
+            </div>
         </div>
     </section>
 
-    <!-- ========== SECTION 10: FAQ ========== -->
-    <section class="section section-alt" id="faq">
+    <!-- ========== SECTION 11: FAQ ========== -->
+    <section class="section" id="faq">
         <div class="container">
             <h2 class="section-heading fade-in">Frequently Asked Questions</h2>
             <div class="faq-list">
@@ -412,7 +491,7 @@
                         <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </button>
                     <div class="faq-answer">
-                        <p>Auto-posting to Instagram and Facebook is launching soon. Right now you get download-ready poster images and your events shared everywhere else automatically.</p>
+                        <p>OnTonite generates ready-to-post poster images and pre-written captions you can share instantly. Direct auto-posting to Instagram and Facebook is coming soon.</p>
                     </div>
                 </div>
                 <div class="faq-item fade-in">
@@ -446,14 +525,15 @@
         </div>
     </section>
 
-    <!-- ========== SECTION 11: FINAL CTA ========== -->
+    <!-- ========== SECTION 12: FINAL CTA ========== -->
     <section class="final-cta" id="final-cta">
         <div class="container">
             <div class="final-cta-content fade-in">
-                <h2>Your Bands Deserve a Full House.</h2>
+                <h2>Every Empty Seat Is Money Left on the Table.</h2>
                 <p>Stop leaving money on the table. Start promoting smarter.</p>
                 <a href="https://manage.ontonite.app" class="btn btn-primary btn-lg">Start Your Free Trial</a>
                 <p class="hero-note">30 days free. No credit card. Set up in 5 minutes.</p>
+                <p class="cta-urgency">Limited spots for founding venues with extended free trials.</p>
             </div>
         </div>
     </section>
